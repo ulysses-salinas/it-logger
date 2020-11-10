@@ -9,7 +9,7 @@ import { GET_LOGS, SET_LOADING, LOGS_ERROR } from './types';
 
 //         dispatch({
 //             type: GET_LOGS,
-//             payload: dat
+//             payload: data
 //         })
 //     }
 // }
@@ -29,7 +29,7 @@ export const getLogs = () => async dispatch => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: error.response.data,
     });
   }
 };
