@@ -5,7 +5,7 @@ import Preloader from '../layout/Preloader';
 import PropTypes from 'prop-types';
 import { getLogs } from '../../actions/logActions';
 
-const Logs = ({ log: {logs, loading}, getLogs }) => {
+const Logs = ({ log: { logs, loading }, getLogs }) => {
   useEffect(() => {
     getLogs();
     //esling-disable-next-line
@@ -32,6 +32,7 @@ const Logs = ({ log: {logs, loading}, getLogs }) => {
 
 Logs.propTypes = {
   log: PropTypes.object.isRequired,
+  getLogs: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
