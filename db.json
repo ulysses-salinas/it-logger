@@ -1,5 +1,13 @@
 {
-  "logs": [],
+  "logs": [
+    {
+      "id": 1,
+      "message": "fix the bug",
+      "attention": false,
+      "tech": "Sara Wilson",
+      "date": "2020-11-15T19:46:32.814Z"
+    }
+  ],
   "techs": [
     {
       "id": 1,
